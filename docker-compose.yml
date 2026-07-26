@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    image: medlibra-web:latest
+    container_name: medlibra-web
+    restart: unless-stopped
+    ports:
+      - "8084:80"
+    networks:
+      - stack-net
+
+networks:
+  stack-net:
+    external: true
+    name: stack_stack-net
