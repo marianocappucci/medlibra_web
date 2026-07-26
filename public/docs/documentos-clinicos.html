@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos clínicos — Documentación MedLibra</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">M</div>MedLibra</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/profesionales-consultorios.html">Profesionales y consultorios</a>
+    <a href="/docs/disponibilidad.html">Disponibilidad y bloqueos</a>
+    <a href="/docs/agenda-turnos.html">Agenda y turnos</a>
+    <div class="docs-sidebar-section">Dominio clínico (incluido siempre)</div>
+    <a href="/docs/pacientes.html">Pacientes</a>
+    <a href="/docs/historia-clinica.html">Historia clínica</a>
+    <a href="/docs/recetas.html">Recetas</a>
+    <a href="/docs/estudios.html">Estudios</a>
+    <a href="/docs/documentos-clinicos.html" class="active">Documentos clínicos</a>
+    <a href="/docs/consentimientos.html">Consentimientos</a>
+    <div class="docs-sidebar-section">Estándar</div>
+    <a href="/docs/recordatorios-senas.html">Recordatorios y señas</a>
+    <div class="docs-sidebar-section">Premium</div>
+    <a href="/docs/facturacion.html">Facturación electrónica</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/dashboard.html">Dashboard</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios-roles.html">Usuarios y roles</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Documentos clínicos</h1>
+    <p class="docs-lead">Subí estudios escaneados e informes en PDF o imagen, vinculados directamente al paciente.</p>
+
+    <h2>Subir un documento</h2>
+    <p>Desde la ficha del paciente, pestaña <strong>Documentos</strong>, subí el archivo con un título y una descripción opcional.</p>
+    <table class="docs-table">
+      <thead><tr><th>Restricción</th><th>Detalle</th></tr></thead>
+      <tbody>
+        <tr><td>Formatos aceptados</td><td>PDF, PNG, JPG, JPEG</td></tr>
+        <tr><td>Tamaño máximo</td><td>20 MB por archivo</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Descargar un documento</h2>
+    <p>La descarga respeta los mismos permisos que el resto de la ficha del paciente — no es un link público, hace falta estar logueado con un rol habilitado.</p>
+
+    <div class="callout warn">
+      <p><strong>Corregir una carga:</strong> no hay edición de un documento ya subido. Un administrador lo borra (elimina también el archivo) y se sube de nuevo.</p>
+    </div>
+
+    <div class="docs-nav-footer">
+      <a href="/docs/estudios.html">← Estudios</a>
+      <a href="/docs/consentimientos.html">Consentimientos →</a>
+    </div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 MedLibra · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
