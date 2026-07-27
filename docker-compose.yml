@@ -4,6 +4,8 @@ services:
     image: medlibra-web:latest
     container_name: medlibra-web
     restart: unless-stopped
+    environment:
+      - AUTH_UPSTREAM=medlibra-web-auth
     ports:
       - "8084:80"
     networks:
