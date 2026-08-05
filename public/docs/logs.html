@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logs del sistema — Documentación MedLibra</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">M</div>MedLibra</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/profesionales-consultorios.html">Profesionales y consultorios</a>
+    <a href="/docs/disponibilidad.html">Disponibilidad y bloqueos</a>
+    <a href="/docs/agenda-turnos.html">Agenda y turnos</a>
+    <div class="docs-sidebar-section">Dominio clínico (incluido siempre)</div>
+    <a href="/docs/pacientes.html">Pacientes</a>
+    <a href="/docs/historia-clinica.html">Historia clínica</a>
+    <a href="/docs/recetas.html">Recetas</a>
+    <a href="/docs/estudios.html">Estudios</a>
+    <a href="/docs/documentos-clinicos.html">Documentos clínicos</a>
+    <a href="/docs/consentimientos.html">Consentimientos</a>
+    <div class="docs-sidebar-section">Estándar</div>
+    <a href="/docs/recordatorios-senas.html">Recordatorios y señas</a>
+    <div class="docs-sidebar-section">Premium</div>
+    <a href="/docs/facturacion.html">Facturación electrónica</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/dashboard.html">Dashboard</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios-roles.html">Usuarios y roles</a>
+    <a href="/docs/logs.html" class="active">Logs del sistema</a>
+    <a href="/docs/configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Logs del sistema</h1>
+<p class="docs-lead">Quién creó, editó o borró qué, y quién entró al sistema. Sólo para administradores — y sin contenido clínico.</p>
+<h2>Dónde está</h2>
+<p>En el menú lateral, <strong>Logs</strong>. Sólo la ve un usuario con rol <strong>admin</strong>. Acá el permiso importa más que en cualquier otra pantalla: la fila dice <em>quién abrió la ficha de qué paciente</em>.</p>
+<h2>🔒 El log no guarda contenido clínico</h2>
+<p>Es la decisión de fondo de esta pantalla, y conviene entenderla antes de usarla.</p>
+<p>Un log de auditoría útil contesta <strong>quién</strong> tocó <strong>qué ficha</strong> y <strong>cuándo</strong>. No tiene por qué contestar <em>qué dice</em> esa ficha. Copiar el texto de una nota clínica o la medicación de una receta al log sería sacar esos datos de la tabla donde están y ponerlos en otra que se mira por motivos completamente distintos, con menos cuidado y ante más ojos.</p>
+<table class="docs-table">
+<thead><tr><th>Sí aparece</th><th>No aparece</th></tr></thead>
+<tbody>
+<tr><td>Que se creó una nota clínica, con quién y cuándo</td><td>El texto de la nota</td></tr>
+<tr><td>Que se emitió una receta</td><td>La medicación y la dosis</td></tr>
+<tr><td>Que se subió un documento clínico</td><td>El título del documento</td></tr>
+<tr><td>Que se editó la ficha de un paciente</td><td>El DNI, el CUIT, la fecha de nacimiento, el mail y el teléfono</td></tr>
+</tbody>
+</table>
+<div class="callout">
+<p><strong>El nombre del paciente sí se muestra</strong> — sin él, la fila no sirve para lo único que existe: saber a qué ficha corresponde. Quien lee este log es un administrador, que ya ve los nombres en la agenda.</p>
+</div>
+<h2>Dos listas, dos preguntas distintas</h2>
+<table class="docs-table">
+<thead><tr><th>Lista</th><th>Contesta</th></tr></thead>
+<tbody>
+<tr><td><strong>Actividad del sistema</strong></td><td>«¿Quién borró este turno?», «¿quién cambió este precio?»</td></tr>
+<tr><td><strong>Accesos de usuarios</strong></td><td>«¿Quién entró ayer?», «¿alguien intentó entrar y falló?»</td></tr>
+</tbody>
+</table>
+<h2>Actividad del sistema</h2>
+<p>Cada fila es un cambio, con acción <strong>Creado</strong>, <strong>Editado</strong> o <strong>Borrado</strong>. Al desplegar una edición se ve el antes y el después de los campos que cambiaron — los que no son sensibles.</p>
+<h3>Filtros</h3>
+<ul>
+<li><strong>Entidad</strong> — ficha, turno, prestación, consultorio, sede, nota clínica, receta, alícuota…</li>
+<li><strong>Acción</strong> — creado, editado o borrado.</li>
+<li><strong>Usuario</strong> — quién lo hizo.</li>
+<li><strong>Desde / Hasta</strong> — por fecha.</li>
+</ul>
+<p>Se muestran de a 100 registros por página, del más reciente al más viejo.</p>
+<div class="callout">
+<p><strong>El registro es automático.</strong> No hay que activarlo: cualquier cambio que se guarde queda anotado, incluidas las funciones que se agreguen más adelante.</p>
+</div>
+<h2>Accesos de usuarios</h2>
+<p>Los últimos 100 accesos, con fecha, evento, usuario y dirección IP. Los eventos son <strong>login</strong>, <strong>logout</strong> y <strong>login fallido</strong>.</p>
+<p>El intento fallido guarda el nombre de usuario que se tipeó, aunque no exista — es lo que distingue a alguien que se equivocó de contraseña de alguien probando usuarios al azar.</p>
+<h2>Desde cuándo</h2>
+<p>El log arranca vacío el día que se instala esta versión y se llena desde ahí. Lo anterior no quedó registrado en ningún lado.</p>
+<div class="docs-nav-footer">
+<a href="/docs/usuarios-roles.html">← Usuarios y roles</a>
+<a href="/docs/configuracion.html">Configuración →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 MedLibra · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
