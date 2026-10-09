@@ -22,6 +22,7 @@
   <div class="navbar-links">
     <a href="#funciones">Funciones</a>
     <a href="#planes">Planes</a>
+    <a href="#preguntas">Preguntas</a>
     <a href="/docs/">Documentación</a>
     <!-- demo-publica --><a href="https://demo.medlibra.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
     <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20MedLibra" target="_blank" class="btn-nav">Contactar</a>
@@ -42,6 +43,14 @@
     </a>
   </div>
 </section>
+
+<!-- ── Puntos fuertes ─────────────────────────────────────── -->
+<div class="highlights">
+  <div class="highlight"><i class="bi bi-calendar2-check"></i><div><strong>Agenda de turnos</strong><span>Por profesional y consultorio</span></div></div>
+  <div class="highlight"><i class="bi bi-person-heart"></i><div><strong>Historia clínica</strong><span>Evolución que no se edita</span></div></div>
+  <div class="highlight"><i class="bi bi-bell"></i><div><strong>Recordatorios</strong><span>Avisos 24 hs y 2 hs antes</span></div></div>
+  <div class="highlight"><i class="bi bi-receipt"></i><div><strong>Facturación ARCA</strong><span>Factura A y B</span></div></div>
+</div>
 
 <!-- ── Funciones ──────────────────────────────────────────── -->
 <section id="funciones">
@@ -152,15 +161,69 @@
   </div>
 </section>
 
+<!-- ── Capturas de la demo ────────────────────────────────── -->
+<section class="showcase">
+  <div class="container">
+    <div class="section-label">Así se ve</div>
+    <h2 class="section-title">La agenda y la historia clínica</h2>
+    <p class="section-sub">La semana de cada profesional y la ficha del paciente. Capturas reales de la demo, con datos de prueba.</p>
+    <div class="showcase-grid">
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.medlibra.com.ar/agenda</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-agenda.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Agenda semanal de MedLibra: turnos de los pacientes por día y hora, con un color por profesional">
+          </div>
+        </div>
+        <figcaption>La agenda: los turnos de cada profesional en la semana.</figcaption>
+      </figure>
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.medlibra.com.ar/pacientes</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-historia-clinica.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Ficha de un paciente en MedLibra: datos de contacto y pestañas de historia clínica, recetas, estudios, documentos y consentimientos, con una nota de evolución">
+          </div>
+        </div>
+        <figcaption>La ficha del paciente: historia clínica, recetas, estudios y más.</figcaption>
+      </figure>
+    </div>
+    <div class="showcase-cta">
+      <!-- demo-publica --><a href="https://demo.medlibra.com.ar/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle"></i> Probar la demo
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── Rubros ─────────────────────────────────────────────── -->
 <section class="alt">
-  <div class="container" style="text-align:center">
+  <div class="container">
     <div class="section-label">Para quién</div>
     <h2 class="section-title">Pensado para profesionales y centros de salud</h2>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem">
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-hospital" style="color:var(--brand);margin-right:.4rem"></i>Consultorios</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-person-vcard" style="color:var(--brand);margin-right:.4rem"></i>Profesionales independientes</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-building-add" style="color:var(--brand);margin-right:.4rem"></i>Centros médicos</span>
+    <div class="rubros">
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-hospital"></i></div>
+        <h3>Consultorios</h3>
+        <p>Agenda de turnos, pacientes, historia clínica, recetas y estudios en un solo lugar.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-person-vcard"></i></div>
+        <h3>Profesionales independientes</h3>
+        <p>Turnos con recordatorios y señas, y facturación electrónica ARCA si facturás.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-building-add"></i></div>
+        <h3>Centros médicos</h3>
+        <p>Turnos por profesional y consultorio, con roles de administrador y staff médico.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -202,7 +265,7 @@
       <!-- Básico -->
       <div class="plan-card">
         <div class="plan-name">Básico</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Todo el dominio clínico, para empezar a ordenar la agenda del consultorio.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Agenda y turnos por profesional</li>
@@ -224,7 +287,7 @@
       <div class="plan-card featured">
         <div class="plan-featured-tag">Más popular</div>
         <div class="plan-name">Estándar</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Para consultorios que quieren reducir ausencias y asegurar la reserva.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Básico</li>
@@ -240,7 +303,7 @@
       <!-- Premium -->
       <div class="plan-card">
         <div class="plan-name">Premium</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Para consultorios que facturan y quieren visibilidad completa de la operación.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Estándar</li>
@@ -261,6 +324,43 @@
   </div>
 </section>
 
+<!-- ── Preguntas frecuentes ───────────────────────────────── -->
+<section id="preguntas" class="faq">
+  <div class="container faq-container">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 class="section-title">Lo que más nos preguntan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Tengo que instalar algo?</summary>
+        <p>No. MedLibra funciona desde el navegador, sin instalaciones: reservás turnos y registrás historia clínica, recetas y estudios desde ahí.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo emitir facturas electrónicas?</summary>
+        <p>Sí, con el plan Premium: factura A o B vía ARCA al completar el turno con saldo pendiente, con CUIT y condición de IVA del paciente. Para facturar se conectan los certificados ARCA de tu consultorio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta?</summary>
+        <p>El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Todo el dominio clínico está siempre disponible, en cualquier plan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿El plan Básico incluye la historia clínica?</summary>
+        <p>Sí. Pacientes, historia clínica, recetas, estudios, documentos clínicos y consentimientos informados están incluidos en todos los planes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo reducir las ausencias a los turnos?</summary>
+        <p>Sí. Con el plan Estándar o superior, MedLibra manda recordatorios automáticos 24 hs y 2 hs antes del turno, y podés cobrar una seña al reservar.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo probarlo antes de contratar?</summary>
+        <p>Sí. Tenés una demo para recorrer el sistema en demo.medlibra.com.ar, o nos escribís por WhatsApp y te contamos más.</p>
+      </details>
+    </div>
+    <p class="faq-more">¿Te quedó otra duda? <a href="https://wa.me/5491127752983?text=Hola,%20tengo%20una%20consulta%20sobre%20MedLibra" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que instalar algo?", "acceptedAnswer": {"@type": "Answer", "text": "No. MedLibra funciona desde el navegador, sin instalaciones: reservás turnos y registrás historia clínica, recetas y estudios desde ahí."}}, {"@type": "Question", "name": "¿Puedo emitir facturas electrónicas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con el plan Premium: factura A o B vía ARCA al completar el turno con saldo pendiente, con CUIT y condición de IVA del paciente. Para facturar se conectan los certificados ARCA de tu consultorio."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Todo el dominio clínico está siempre disponible, en cualquier plan."}}, {"@type": "Question", "name": "¿El plan Básico incluye la historia clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Pacientes, historia clínica, recetas, estudios, documentos clínicos y consentimientos informados están incluidos en todos los planes."}}, {"@type": "Question", "name": "¿Puedo reducir las ausencias a los turnos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Con el plan Estándar o superior, MedLibra manda recordatorios automáticos 24 hs y 2 hs antes del turno, y podés cobrar una seña al reservar."}}, {"@type": "Question", "name": "¿Puedo probarlo antes de contratar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tenés una demo para recorrer el sistema en demo.medlibra.com.ar, o nos escribís por WhatsApp y te contamos más."}}]}</script>
+
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
   <h2>¿Listo para ordenar tu consultorio?</h2>
@@ -272,44 +372,46 @@
 </section>
 
 <!-- ── Footer ─────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div>
+<footer class="site-footer">
+  <div class="f-inner">
+    <div class="f-about">
       <div class="footer-brand">
-        <img src="/img/marca.svg" alt="" class="logo-icon" width="28" height="28">
+        <img src="/img/marca.svg" alt="" class="logo-icon f-logo" width="28" height="28">
         MedLibra
       </div>
-      <div class="footer-tagline">Turnos y gestión clínica para consultorios</div>
+      <p class="f-tagline">Turnos y gestión clínica para consultorios: agenda, historia clínica, recetas y facturación electrónica ARCA.</p>
+      <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20MedLibra" target="_blank" rel="noopener" class="f-cta">
+        <i class="bi bi-whatsapp"></i> Escribinos por WhatsApp
+      </a>
     </div>
-    <div style="display:flex;gap:3rem;flex-wrap:wrap">
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Sistema</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="#funciones" style="color:#94a3b8;font-size:.9rem">Funciones</a>
-          <a href="#planes" style="color:#94a3b8;font-size:.9rem">Planes</a>
-          <a href="/docs/" style="color:#94a3b8;font-size:.9rem">Documentación</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Contacto</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://wa.me/5491127752983" target="_blank" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
-          <a href="mailto:soporte@medlibra.com.ar" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-envelope me-1"></i>Email</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Familia Libra</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Gestiolibra — Turnos para servicios</a>
-          <a href="https://ventalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">VentaLibra — Punto de venta</a>
-          <a href="https://contalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Contalibra — ERP & Facturación</a>
-          <a href="https://restolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Restolibra — Gestión gastronómica</a>
-        </div>
-      </div>
-    </div>
+    <nav class="f-col" aria-label="Sistema">
+      <div class="f-title">Sistema</div>
+      <a href="#funciones">Funciones</a>
+      <a href="#planes">Planes</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="/docs/">Documentación</a>
+      <!-- demo-publica --><a href="https://demo.medlibra.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
+    </nav>
+    <nav class="f-col" aria-label="Contacto">
+      <div class="f-title">Contacto</div>
+      <a href="https://wa.me/5491127752983" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+      <a href="mailto:soporte@medlibra.com.ar"><i class="bi bi-envelope"></i>soporte@medlibra.com.ar</a>
+    </nav>
+    <nav class="f-col f-family" aria-label="LibraSuite">
+      <div class="f-title">LibraSuite</div>
+      <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite<small>Todos los sistemas de la suite</small></a>
+      <a href="https://ventalibra.com.ar" target="_blank" rel="noopener">VentaLibra<small>Punto de venta para retail</small></a>
+      <a href="https://contalibra.com.ar" target="_blank" rel="noopener">Contalibra<small>ERP y facturación</small></a>
+      <a href="https://restolibra.com.ar" target="_blank" rel="noopener">Restolibra<small>Gestión gastronómica</small></a>
+      <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener">Gestiolibra<small>Turnos para servicios</small></a>
+      <a href="https://libradesk.com.ar" target="_blank" rel="noopener">LibraDesk<small>Mesa de ayuda y service IT</small></a>
+      <a href="https://libracargo.com.ar" target="_blank" rel="noopener">LibraCargo<small>Agencias de cargas</small></a>
+      <a href="https://libraclub.com.ar" target="_blank" rel="noopener">LibraClub<small>Reservas de canchas</small></a>
+    </nav>
   </div>
-  <div class="footer-copy">
-    © 2026 MedLibra · parte de la familia Libra · Todos los derechos reservados
+  <div class="f-bottom">
+    <span>© 2026 MedLibra · parte de <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite</a> · Todos los derechos reservados</span>
+    <a href="/legal/terminos.html">Términos y condiciones</a>
   </div>
 </footer>
 
